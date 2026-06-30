@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+
 *{
     margin:0;
     padding:0;
@@ -5,14 +7,18 @@
 }
 
 body{
-    font-family:'Segoe UI',sans-serif;
+    font-family:'Fredoka',sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400; 
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
     background: linear-gradient( #eef5fb, #f8fbff );
     color:#263238;
 }
 
 header{
     background:
-        linear-gradient(rgba(5,25,55,0.85), rgba(13,71,161,0.90) ), url('../Img/galeria1.jpg');
+        linear-gradient(rgba(5,25,55,0.85), rgba(46, 139, 87, 0.9) ), url('../Img/galeria1.jpg');
     background-size:cover;
     background-position:center;
     color:white;
@@ -42,7 +48,7 @@ header p{
 }
 
 nav{
-    background:#1565c0;
+    background:#2E8B57;
     position:sticky;
     top:0;
     z-index:100;
@@ -70,7 +76,7 @@ nav a{
 
 nav a:hover{
     background:white;
-    color:#1565c0;
+    color:#2E8B57;
 }
 
 section{
@@ -188,15 +194,37 @@ p{
     display:inline-block;
     margin:10px;
     padding:12px 20px;
-    background:#1976d2;
+    background:#2E8B57;
     color:white;
     text-decoration:none;
     border-radius:10px;
     transition:0.3s;
+    
 }
 
 .testimonios a:hover{
-    background:#0d47a1;
+    background:#2E8B57;
+}
+.instagram-media{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap: 30px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+.contenedor-videos-ig {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    margin-top: 30px;
+    flex-wrap: wrap; 
+}
+
+.video-ig {
+    width: 100%;
+    max-width: 350px; 
 }
 
 #contacto p{
@@ -219,7 +247,7 @@ p{
 }
 
 footer{
-    background:#0d47a1;
+    background:#2E8B57;
     color:white;
     text-align:center;
     padding:30px;
